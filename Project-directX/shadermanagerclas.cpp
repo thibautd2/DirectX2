@@ -6,7 +6,6 @@
 ShaderManagerClass::ShaderManagerClass()
 {
 	m_TextureShader = 0;
-	m_FontShader = 0;
 	m_FoliageShader = 0;
 }
 
@@ -41,21 +40,6 @@ bool ShaderManagerClass::Initialize(D3DClass* Direct3D, HWND hwnd)
 		return false;
 	}
 
-	// Create the font shader object.
-	m_FontShader = new FontShaderClass;
-	if (!m_FontShader)
-	{
-		return false;
-	}
-
-	// Initialize the font shader object.
-	result = m_FontShader->Initialize(Direct3D->GetDevice(), hwnd);
-	if (!result)
-	{
-		MessageBox(hwnd, L"Could not initialize the font shader object.", L"Error", MB_OK);
-		return false;
-	}
-
 	// Create the foliage shader object.
 	m_FoliageShader = new FoliageShaderClass;
 	if (!m_FoliageShader)
@@ -86,12 +70,7 @@ void ShaderManagerClass::Shutdown()
 	}
 
 	// Release the font shader object.
-	if (m_FontShader)
-	{
-		m_FontShader->Shutdown();
-		delete m_FontShader;
-		m_FontShader = 0;
-	}
+
 
 	// Release the texture shader object.
 	if (m_TextureShader)
@@ -114,7 +93,6 @@ void ShaderManagerClass::RenderTextureShader(ID3D11DeviceContext* deviceContext,
 
 void ShaderManagerClass::RenderFontShader(ID3D11DeviceContext* deviceContext, int indexCount, Matrix worldMatrix, Matrix viewMatrix, Matrix projectionMatrix, ID3D11ShaderResourceView* texture, Vector4 color)
 {
-	m_FontShader->Render(deviceContext, indexCount, worldMatrix, viewMatrix, projectionMatrix, texture, color);
 	return;
 }
 

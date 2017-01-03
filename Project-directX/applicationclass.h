@@ -18,14 +18,10 @@ const float SCREEN_NEAR = 0.1f;
 ///////////////////////
 // MY CLASS INCLUDES //
 ///////////////////////
-#include "inputclass.h"
 #include "d3dclass.h"
 #include "shadermanagerclas.h"
-#include "timerclass.h"
 #include "positionclass.h"
 #include "cameraclass.h"
-#include "fpsclass.h"
-#include "userinterfaceclass.h"
 #include "modelclas.h"
 #include "foliageclass.h"
 #include "DirectXTK\SimpleMath.h"
@@ -52,14 +48,10 @@ private:
 	bool RenderSceneToTexture();
 
 private:
-	InputClass* m_Input;
 	D3DClass* m_Direct3D;
 	ShaderManagerClass* m_ShaderManager;
-	TimerClass* m_Timer;
 	PositionClass* m_Position;
 	CameraClass* m_Camera;
-	FpsClass* m_Fps;
-	UserInterfaceClass* m_UserInterface;
 	ModelClass* m_GroundModel;
 	FoliageClass* m_Foliage;
 };

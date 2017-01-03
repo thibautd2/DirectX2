@@ -42,32 +42,23 @@
 #include "d3dclass.h"
 
 #include "DirectXTK/SimpleMath.h"
-#include "inputclass.h"
 
-#include "fontshaderclass.h"
+
 #include "colorshaderclass.h"
 
 #include "textureclass.h"
-#include "Fontclass.h"
 #include "positionclass.h"
 #include "systemclass.h"
 #include "applicationclass.h"
-#include "timerclass.h"
-#include "fpsclass.h"
-#include "textclass.h"
 #include "systemclass.h"
-#include "cpuclass.h"
-#include "inputclass.h"
+
 #include "cameraclass.h"
 #include "foliageclass.h"
 #include "foliageshaderclass.h"
-#include "fontclass.h"
 #include "modelclas.h"
 #include "positionclass.h"
 #include "Resource.h"
-#include "targetver.h"
 #include "terrainclass.h"
-#include "userinterfaceclass.h"
 #include "textureclass.h"
 #include <d3dcompiler.h>
 #include "DirectXTK\DDSTextureLoader.h"

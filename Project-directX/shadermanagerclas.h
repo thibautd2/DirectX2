@@ -11,7 +11,6 @@
 ///////////////////////
 #include "d3dclass.h"
 #include "textureshaderclass.h"
-#include "fontshaderclass.h"
 #include "foliageshaderclass.h"
 
 
@@ -34,7 +33,6 @@ public:
 
 private:
 	TextureShaderClass* m_TextureShader;
-	FontShaderClass* m_FontShader;
 	FoliageShaderClass* m_FoliageShader;
 };
 
