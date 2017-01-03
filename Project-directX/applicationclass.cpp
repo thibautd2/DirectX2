@@ -8,7 +8,6 @@ ApplicationClass::ApplicationClass()
 {
 	m_Direct3D = 0;
 	m_ShaderManager = 0;
-	m_Position = 0;
 	m_Camera = 0;
 	m_GroundModel = 0;
 	m_Foliage = 0;
@@ -63,19 +62,6 @@ bool ApplicationClass::Initialize(HINSTANCE hinstance, HWND hwnd, int screenWidt
 	}
 
 	
-
-	
-
-	// Create the position object.
-	m_Position = new PositionClass;
-	if (!m_Position)
-	{
-		return false;
-	}
-
-	// Set the initial position.
-	m_Position->SetPosition(0.0f, 1.5f, -4.0f);
-	m_Position->SetRotation(15.0f, 0.0f, 0.0f);
 
 	// Create the camera object.
 	m_Camera = new CameraClass;
@@ -156,15 +142,6 @@ void ApplicationClass::Shutdown()
 		m_Camera = 0;
 	}
 
-	// Release the position object.
-	if (m_Position)
-	{
-		delete m_Position;
-		m_Position = 0;
-	}
-
-
-
 	// Release the shader manager object.
 	if (m_ShaderManager)
 	{
@@ -193,8 +170,7 @@ bool ApplicationClass::Frame()
 
 
 	// Get the view point position/rotation.
-	m_Position->GetPosition(posX, posY, posZ);
-	m_Position->GetRotation(rotX, rotY, rotZ);
+	
 
 	// Do the frame processing for the user interface.
 
@@ -228,15 +204,7 @@ bool ApplicationClass::HandleMovementInput(float frameTime)
 
 
 	// Set the frame time for calculating the updated position.
-	m_Position->SetFrameTime(frameTime);
 
-	// Get the view point position/rotation.
-	m_Position->GetPosition(posX, posY, posZ);
-	m_Position->GetRotation(rotX, rotY, rotZ);
-
-	// Set the position of the camera.
-	m_Camera->SetPosition(posX, posY, posZ);
-	m_Camera->SetRotation(rotX, rotY, rotZ);
 
 	return true;
 }

@@ -161,13 +161,11 @@
     <ClInclude Include="foliageclass.h" />
     <ClInclude Include="foliageshaderclass.h" />
     <ClInclude Include="modelclas.h" />
-    <ClInclude Include="positionclass.h" />
     <ClInclude Include="Project-directX.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="shadermanagerclas.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="systemclass.h" />
-    <ClInclude Include="terrainclass.h" />
     <ClInclude Include="textureclass.h" />
     <ClInclude Include="textureshaderclass.h" />
   </ItemGroup>
@@ -182,7 +180,6 @@
     <ClCompile Include="foliageshaderclass.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Modelclass.cpp" />
-    <ClCompile Include="positionclass.cpp" />
     <ClCompile Include="shadermanagerclas.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -191,7 +188,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="systemclass.cpp" />
-    <ClCompile Include="terrainclass.cpp" />
     <ClCompile Include="textureclass.cpp" />
     <ClCompile Include="textureshaderclass.cpp" />
   </ItemGroup>

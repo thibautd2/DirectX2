@@ -1,4 +1,1 @@
-﻿  applicationclass.cpp
-c:\users\thiba\desktop\biatch\directx2\project-directx\applicationclass.cpp(226): warning C4101: 'keyDown' : variable locale non référencée
-  Project-directX.vcxproj -> C:\Users\thiba\Desktop\biatch\DirectX2\x64\Debug\Project-directX.exe
-  Project-directX.vcxproj -> C:\Users\thiba\Desktop\biatch\DirectX2\x64\Debug\Project-directX.pdb (Full PDB)
+﻿

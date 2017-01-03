@@ -20,7 +20,6 @@ const float SCREEN_NEAR = 0.1f;
 ///////////////////////
 #include "d3dclass.h"
 #include "shadermanagerclas.h"
-#include "positionclass.h"
 #include "cameraclass.h"
 #include "modelclas.h"
 #include "foliageclass.h"
@@ -50,7 +49,6 @@ private:
 private:
 	D3DClass* m_Direct3D;
 	ShaderManagerClass* m_ShaderManager;
-	PositionClass* m_Position;
 	CameraClass* m_Camera;
 	ModelClass* m_GroundModel;
 	FoliageClass* m_Foliage;

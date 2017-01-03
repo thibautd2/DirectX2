@@ -51,16 +51,10 @@
     <ClInclude Include="modelclas.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="positionclass.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="shadermanagerclas.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="systemclass.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="terrainclass.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="textureclass.h">
@@ -116,16 +110,10 @@
     <ClCompile Include="Modelclass.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="positionclass.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
     <ClCompile Include="shadermanagerclas.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="systemclass.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="terrainclass.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="textureclass.cpp">

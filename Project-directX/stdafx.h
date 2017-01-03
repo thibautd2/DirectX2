@@ -47,7 +47,6 @@
 #include "colorshaderclass.h"
 
 #include "textureclass.h"
-#include "positionclass.h"
 #include "systemclass.h"
 #include "applicationclass.h"
 #include "systemclass.h"
@@ -56,9 +55,7 @@
 #include "foliageclass.h"
 #include "foliageshaderclass.h"
 #include "modelclas.h"
-#include "positionclass.h"
 #include "Resource.h"
-#include "terrainclass.h"
 #include "textureclass.h"
 #include <d3dcompiler.h>
 #include "DirectXTK\DDSTextureLoader.h"
